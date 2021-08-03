@@ -19,7 +19,7 @@ public class Run {
 		B_ValuePrinter bp = new B_ValuePrinter();
 		bp.printValue1();
 		bp.printValue2();
-		bp.printValue3();
+		//bp.printValue3();
 		
 		
 		
