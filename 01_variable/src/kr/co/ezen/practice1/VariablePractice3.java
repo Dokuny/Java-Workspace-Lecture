@@ -13,8 +13,6 @@ public class VariablePractice3 {
 		System.out.println("가로입력 : ");
 		height = sc.nextDouble();
 		
-		sc.nextLine();
-		
 		System.out.println("세로입력 : ");
 		length = sc.nextDouble();
 		

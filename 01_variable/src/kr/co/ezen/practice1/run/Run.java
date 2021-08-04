@@ -3,6 +3,7 @@ package kr.co.ezen.practice1.run;
 import kr.co.ezen.practice1.VariablePractice1;
 import kr.co.ezen.practice1.VariablePractice2;
 import kr.co.ezen.practice1.VariablePractice3;
+import kr.co.ezen.practice1.VariablePractice4;
 
 public class Run {
 
@@ -15,7 +16,10 @@ public class Run {
 		//vp2.calculate();
 		
 		VariablePractice3 vp3 = new VariablePractice3();
-		vp3.square();
+		//vp3.square();
+	
+		VariablePractice4 vp4 = new VariablePractice4();
+		vp4.apple();
 	}
 
 }
