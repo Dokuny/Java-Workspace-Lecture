@@ -2,7 +2,7 @@ package kr.co.ezen.chap01.condition;
 
 import java.util.Scanner;
 
-public class A_If {
+public class A_if {
 
 	public void method1() {
 		Scanner sc=new Scanner(System.in);

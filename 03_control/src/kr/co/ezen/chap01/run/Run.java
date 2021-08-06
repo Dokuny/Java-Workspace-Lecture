@@ -1,12 +1,12 @@
 package kr.co.ezen.chap01.run;
 
-import kr.co.ezen.chap01.condition.A_If;
+import kr.co.ezen.chap01.condition.A_if;
 import kr.co.ezen.chap01.condition.B_IfElse;
 
 public class Run {
 
 	public static void main(String[] args) {
-		A_If aif=new A_If();
+		A_if aif=new A_if();
 		
 		//aif.method1();
 		//aif.method2();
