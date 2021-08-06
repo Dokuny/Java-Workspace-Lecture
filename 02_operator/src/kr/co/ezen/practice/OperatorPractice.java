@@ -119,6 +119,61 @@ public class OperatorPractice {
 		
 		String print = (age <= 13)? "어린이입니다": ((age<=19)?"청소년입니다":"성인입니다");
 		System.out.println(print);
+		
+		sc.close();
 	}
 
+	public void practice8() {
+		Scanner sc = new Scanner(System.in);
+		
+		char num;
+		String gender;
+		
+		System.out.println("주민번호 입력하세요 (-포함)");
+		num = sc.nextLine().charAt(7);
+		
+		gender = (num == 49 || num == 51) ? "남자" : "여자"; // 49 대신 '1' 이런식으로 사용해도 된다.
+		
+		System.out.println(gender);
+		
+		sc.close();
+		}
+
+	
+	public void practice9() {
+		Scanner sc = new Scanner(System.in);
+		
+		int num1;
+		int num2;
+		
+		System.out.println("정수를 입력해주세요");
+		System.out.print("정수1 : "); 
+		num1 = sc.nextInt();
+		sc.nextLine();
+		
+		System.out.print("정수2 : ");
+		num2 = sc.nextInt();
+		sc.nextLine();
+		
+		System.out.print("입력 : ");
+		int num3 = sc.nextInt();
+		
+		boolean a = num1<num2 && (num3 > num2 || num3 <= num1);
+		
+		System.out.println(a);
+		
+		sc.close();
+	}
+	
+	public void practice10() {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("입력1 : ");
+		int a =sc.nextInt();
+		System.out.print("입력2 : ");
+		int b = sc.nextInt();
+		System.out.print("입력3 : ");
+		int c = sc.nextInt();
+		
+		System.out.println(a == b && b == c);
+	}
 }
