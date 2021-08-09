@@ -3,6 +3,7 @@ package kr.co.ezen.chap01.run;
 import kr.co.ezen.chap01.condition.A_if;
 import kr.co.ezen.chap01.condition.B_IfElse;
 import kr.co.ezen.chap01.condition.C_IfElseIf;
+import kr.co.ezen.chap01.condition.D_Switch;
 
 public class Run {
 
@@ -29,7 +30,10 @@ public class Run {
 		
 		C_IfElseIf cif = new C_IfElseIf();
 		//cif.method1();
-		cif.method5();
+		//cif.method5();
+		
+		D_Switch sw = new D_Switch();
+		sw.method2();
 	}
 
 }
