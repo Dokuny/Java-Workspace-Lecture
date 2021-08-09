@@ -1,4 +1,4 @@
-package test;
+package chapter5;
 
 public class HelloJava {
 

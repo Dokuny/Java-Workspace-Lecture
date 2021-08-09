@@ -2,6 +2,7 @@ package kr.co.ezen.chap01.run;
 
 import kr.co.ezen.chap01.condition.A_if;
 import kr.co.ezen.chap01.condition.B_IfElse;
+import kr.co.ezen.chap01.condition.C_IfElseIf;
 
 public class Run {
 
@@ -18,11 +19,17 @@ public class Run {
 		//aif.method8();
 		
 		B_IfElse bif=new B_IfElse(); // 객체생성
-		//bif.method1();
 		//bif.method2();
 		//bif.method3();
-		bif.method4();
+		//bif.method4();
+		//bif.method5();
+		//bif.method6();
+		//bif.method7();
+		//bif.method8();
 		
+		C_IfElseIf cif = new C_IfElseIf();
+		//cif.method1();
+		cif.method5();
 	}
 
 }
