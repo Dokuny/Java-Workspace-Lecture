@@ -12,7 +12,8 @@ public class Run {
 		//af.method3();
 		//af.method4();
 		//af.method5();
-		af.method6();
+		//af.method6();
+		af.methodT();
 
 	}
 

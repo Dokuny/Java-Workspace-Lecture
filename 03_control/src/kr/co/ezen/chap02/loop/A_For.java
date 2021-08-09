@@ -66,7 +66,8 @@ public class A_For {
 		int b = sc.nextInt();
 		
 		int sum = 0;
-		
+		//int max =0;
+		//int min =0;
 		if(a>b) {
 			for(int i = b; i<=a; i++ ) {
 				sum += i;	
@@ -82,4 +83,29 @@ public class A_For {
 			System.out.printf("%d에서 %d까지의 합 : %d",a,b,sum);
 		}
 	}
+	public void methodT() {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("첫번째정수 :");
+		int a = sc.nextInt();
+		System.out.print("두번째정수: ");
+		int b = sc.nextInt();
+		
+		int sum = 0;
+		int max = 0;
+		int min = 0;
+		
+		max = a>=b ? a:b ;
+		min = a>=b ? b:a ;
+		
+		if(a==b) {
+			sum = min+max;
+		}else {
+			for(int i = min; i <= max; i++) {
+				sum += i;
+			}
+		}
+		System.out.printf("%d에서 %d까지의 합 : %d",min,max,sum);
+	
+		}
 }
