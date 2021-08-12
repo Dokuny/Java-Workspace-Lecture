@@ -66,8 +66,7 @@ public class A_For {
 		int b = sc.nextInt();
 		
 		int sum = 0;
-		//int max =0;
-		//int min =0;
+		
 		if(a>b) {
 			for(int i = b; i<=a; i++ ) {
 				sum += i;	
@@ -83,6 +82,7 @@ public class A_For {
 			System.out.printf("%d에서 %d까지의 합 : %d",a,b,sum);
 		}
 	}
+	
 	public void methodT() {
 		Scanner sc = new Scanner(System.in);
 		
