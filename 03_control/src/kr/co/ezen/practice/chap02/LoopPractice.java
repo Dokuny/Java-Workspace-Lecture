@@ -181,4 +181,77 @@ public class LoopPractice {
 		sc.close();
 		
 	}
+	
+	public void method12() {
+		Scanner sc = new Scanner(System.in);
+		
+		int sum = 0;
+		
+		while(true) {
+			System.out.println("첫번째 정수 입력");
+			int num1 = sc.nextInt();
+			System.out.println("두번째 정수 입력");
+			int num2 = sc.nextInt();
+			System.out.println("연산자 입력");
+			String operator = sc.next();
+			
+		
+			switch(operator) { 
+					case "/" :
+						if(num2 == 0) {
+							System.out.println("0으로 나눌 수 없습니다. 다시 입력해주세요");
+							continue;
+						}
+						sum = num1 / num2;
+						break;
+					case "*" :
+						sum = num1 * num2;
+						break;
+					case "+" :
+						sum =  num1 + num2;
+						break;
+					case "-" :
+						sum = num1 - num2;
+						break;
+					case "%" : 
+						sum = num1 % num2;
+						break;
+					case "exit" :
+						System.out.println("프로그램을 종료합니다");
+						break;
+					default :
+						System.out.println("없는 연산자 입니다.다시 입력해주세요");
+						continue;
+				}	
+				System.out.printf("%d %s %d = %d",num1,operator,num2,sum);
+				sc.close();
+				break;
+			}
+	}
+	
+	public void method13() {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("정수입력: ");
+		int num = sc.nextInt();
+		for(int i=1; i<=num;i++) {
+			for(int j=1; j<=i;j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+	}
+	
+	public void method14() {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("정수입력: ");
+		int num = sc.nextInt();
+		for(int i=1; i<=num;i++) {
+			for(int j=num; j>=i;j--) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+	}
 }

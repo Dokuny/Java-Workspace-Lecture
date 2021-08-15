@@ -18,6 +18,9 @@ public class Run {
 	//lp.method7();
 	//lp.method8();
 	//lp.method9();
-	lp.method10();
+	//lp.method10();
+	//lp.method12();
+	//lp.method13();
+	lp.method14();
 	}	
 }
