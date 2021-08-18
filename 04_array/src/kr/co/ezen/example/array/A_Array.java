@@ -94,4 +94,21 @@ public class A_Array {
 			System.out.println(arr[i]);
 		}
 	}
+	
+	public void method7() {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("문자열 입력 : ");
+		String str = sc.nextLine();
+		
+		char[] arr = new char[str.length()]; //lenght()는 문자열의 길이 리턴 ->변수
+		
+		for(int i=0;i<arr.length;i++) {   //length는 배열의 길이 리턴 -> 상수
+			arr[i]=str.charAt(i);
+		}
+		
+		for(int i=0; i<arr.length;i++) {
+			System.out.println(arr[i]+" ");
+		}
+	}
 }
