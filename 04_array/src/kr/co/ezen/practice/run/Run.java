@@ -1,5 +1,7 @@
 package kr.co.ezen.practice.run;
 
+import java.util.*;
+
 import kr.co.ezen.practice.array.*;
 
 public class Run {
@@ -15,9 +17,15 @@ public class Run {
 		//pr.pratice7();
 		//pr.practice8();
 		//pr.practice9();
+		//pr.practice10();
+		//pr.practice11();
+		//pr.practice12();
+		//pr.practice13();
+		//pr.practice14();
+		//pr.test01();
 		
-		char c = 'a';
-		String str = String.valueOf(c);
-		System.out.println(str);
+		pr.practice16();
+	
+	
 	}
 }
