@@ -325,16 +325,16 @@ public class Practice {
 		String[] strArr = new String[n];
 		sc.nextLine();
 		
-		int sum=n;
+		//int sum=n;
 		int num =0;
 		
 		while(true) {
-			if(num <sum-1) {	
+			if(num <strArr.length-1) {	
 			System.out.printf("%d번째 문자열 : ",num+1);	
 			strArr[num] = sc.nextLine();  
 			num++;
 			
-			}else if(num == sum-1) {
+			}else if(num == strArr.length-1) {
 				System.out.printf("%d번째 문자열 : ",num+1);
 				strArr[num] = sc.nextLine();
 				num++;
@@ -345,11 +345,11 @@ public class Practice {
 					System.out.print("더 입력하고 싶은 개수 : ");
 					int c = sc.nextInt();
 					sc.nextLine();
-					sum += c;
+					//sum += c;
 					
-					String[] strArr1 = strArr.clone();
-					strArr = new String[sum];
-					System.arraycopy(strArr1, 0, strArr, 0, strArr1.length);
+					String[] strArr1 = new String[strArr.length+c];
+					System.arraycopy(strArr, 0, strArr1, 0, strArr.length);
+					strArr = strArr1;
 				}else {
 					System.out.println(Arrays.toString(strArr));
 					return;

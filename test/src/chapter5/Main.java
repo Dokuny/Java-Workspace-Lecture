@@ -7,21 +7,42 @@ public class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		int[] a = new int[10];
-		int[] b = new int[10];
-		
-		for(int i =0;i<a.length;i++) {
-			a[i] = sc.nextInt();
-			b[i]= a[i]%42;
+		int C = sc.nextInt();
+		if(C<1) {
+			return;
 		}
 		
-	ArrayList list = new ArrayList();
-	
-	for(int i=0; i < b.length; i++) {
-		if(!list.contains(b[i])) {
-			list.add(b[i]);	
+		int[] cArray = new int[C];
+		
+		for(int i =0; i<cArray.length; i++) {
+			int N = sc.nextInt();
+			
+			if(N<1 || N>1000) {
+				return;
+			}
+			
+			int[] studentNum = new int[N];
+			
+			int sum = 0;
+			
+			for(int j=0; j<studentNum.length; j++) {
+				studentNum[j] = sc.nextInt();
+				sum+= studentNum[j];
+				if(studentNum[j] <0 || studentNum[j] >100) {
+					return;
+				}
+			}
+			
+			double avg = (double)sum/N;
+			
+			sum =0;
+			for(int j =0 ; j<studentNum.length;j++) {	
+				if(studentNum[j]>avg) {
+					sum++;
+				}
+			
+			}
+			System.out.printf("%.3f%%\n",(double)sum/N*100);
 		}
-	}
-		System.out.println(list.size());
 	}
 }
